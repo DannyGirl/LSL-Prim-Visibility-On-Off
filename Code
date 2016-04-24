@@ -1,0 +1,14 @@
+integer Switch;
+default
+{
+    touch_start(integer num)
+    {
+        Switch = !Switch;
+        if (Switch)
+        {
+            llSetAlpha(0, ALL_SIDES);
+        } else {
+            llSetAlpha(1, ALL_SIDES);
+        }
+    }
+}
